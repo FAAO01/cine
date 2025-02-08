@@ -1,0 +1,70 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #213547;
+  --primary-color: #646cff;
+  --button-bg: #f9f9f9;
+  --button-hover: #535bf2;
+}
+
+.dark {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --primary-color: #a1a1ff;
+  --button-bg: #2a2a2a;
+  --button-hover: #646cff;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Asegurar que todos los textos usen la variable de color */
+h1, h2, h3, p, a, span, button {
+  color: var(--text-color) !important;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.search-bar {
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.filter-select {
+  max-width: 750px;
+  margin: 0 auto;
+  display: block;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.movie-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-warning {
+  width: 100%;
+}
